@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: "Poppins", cursive;
+  font-weight: 100;
+  height: 100%;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  padding: 10px 20px;
+  height: 70px;
+}
+
+.logo {
+  width:130px;
+  position: relative;
+  left: 35%;
+}
+
+.icons-navbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-cart {
+  width: 50px;
+  cursor: pointer;
+  position: relative;
+  right: 290px;
+}
+
+.menu-btn {
+  font-size: 45px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+.bem-vindo {
+  font-size: 30px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  position: relative;
+  left: 45px;
+}
+
+.sem-login {
+  margin-top: 5px;
+  font-size: 20px;
+  position: relative;
+  left:60px;
+
+}
+
+.sem-login a {
+  color: orange;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: 25px;
+}
+
+.sidebar ul li a:hover {
+  color: orange;
+}
+
+#texto-lançamentos {
+  font-weight: bold;
+  color: orange;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#title {
+  color: orange;
+  font-size: 30px;
+  margin-top: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.submenu {
+  display: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.submenu li {
+  margin-bottom: 5px;
+}
+
+/* Style for cadastro.html */
+
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: calc(100vh - 70px);
+}
+
+
+.form-box {
+  background: white;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.form-box h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-box input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #43a047;
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: orange;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.d-none {
+  display: none;
+}
+
+/* Style for login.html */
+
+.login-links {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-links a {
+  display: block;
+  color: orange;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/*style for index.html*/
+
+.home-container {
+  padding: 0 15px;
+  background-color: #0f0f0f;
+  width: 100vw;
+}
+
+.banner-principal img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.titulo-l{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo-secao {
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.titulo-secao.kits {
+  color: orange;
+}
+.carrossel-produtos {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.carrossel-produtos::-webkit-scrollbar {
+  height: 6px;
+}
+
+.carrossel-produtos::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.carrossel-produtos .card-produto {
+  flex: 0 0 auto;
+  width: 160px;
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card-produto {
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card-produto .categoria {
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.card-produto img {
+  width: 100%;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.card-produto .nome-produto {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.card-produto .preco {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.btn-adicionar {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100%;
+}
