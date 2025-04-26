@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto - OFFICIALLD</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar (igual das outras telas) -->
+  <header class="navbar">
+    <img src="./assets/logo_em_branco.png" alt="Logo" class="logo" />
+    <div class="icons-navbar">
+      <img src="./assets/carrinho.png" alt="Carrinho" class="icon-cart" />
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+  <aside class="sidebar" id="menu">
+    <button class="close-btn" onclick="toggleMenu()">×</button>
+  
+    <div class="bem-vindo">
+      <img src="./assets/sombra-de-usuario-masculino 1.png" alt="Usuário" width="20px" />
+      Olá!, bem-vindo!
+    </div>
+  
+    <div class="sem-login">
+      <div class="entre-registre">
+        Entre ou <a id="registre" href="#">cadastre-se</a> aqui
+      </div>
+    </div>
+  
+    <ul>
+      <li><a id="texto-lançamentos" href="#">Lançamentos</a></li>
+      <li>
+        <a href="#" onclick="toggleSubmenu(event)">Calças ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Jeans</a></li>
+          <li><a href="#">Jogger</a></li>
+          <li><a href="#">Cargo</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onclick="toggleSubmenu(event)">Camisetas ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Estampadas</a></li>
+          <li><a href="#">Lisas</a></li>
+          <li><a href="#">Regatas</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Bonés</a></li>
+      <li><a href="#">Sapatos</a></li>
+    </ul>
+  
+    <h2 id="title">SERVIÇOS</h2>
+    <ul>
+      <li><a href="#">Trocas</a></li>
+      <li><a href="#">Devoluções</a></li>
+      <li><a href="#">Dúvidas</a></li>
+      <li><a href="#">Acompanhar Pedido</a></li>
+      <li><a href="#">Efetuar Troca</a></li>
+      <li><a href="#">Atendimento</a></li>
+    </ul>
+  </aside>
+
+  <!-- Conteúdo do Produto -->
+  <main class="produto-container">
+    <section class="imagem-produto">
+      <img src="./assets/kit-+-vendido.png" alt="Produto" />
+    </section>
+
+    <section class="detalhes-produto">
+      <h1 class="categoria-produto">STREETWEAR</h1>
+
+      <div class="precos">
+        <p class="preco-antigo">159,99</p>
+        <p>por</p>
+        <p class="preco-novo">109,99</p>
+      </div>
+      <div class="precos">
+        <p class="parcelamento">ou 12x 9,16 sem juros</p>
+      </div>
+
+      <div class="tamanhos">
+        <button>P</button>
+        <button>M</button>
+        <button>G</button>
+        <button>GG</button>
+      </div>
+
+      <button class="btn-comprar">COMPRAR</button>
+
+      <button class="btn-adicionar-carrinho">ADICIONAR AO CARRINHO</button>
+
+      <div class="frete">
+        <p>Calcule seu frete</p>
+        <input type="text" placeholder="CEP:" />
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
